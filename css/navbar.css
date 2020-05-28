@@ -1,0 +1,47 @@
+li{
+  list-style-type: none;
+
+  /*Spacing in the navbar */
+  margin: 2vw 0;
+
+  font-size: 3vh;
+}
+
+a{
+  text-decoration: none;
+
+  /*Setting text color and font */
+  color: black;
+  font-family: monospace;
+
+  padding: 2vw;
+}
+
+nav{
+
+  /*Set to 100% of viewport width. Choosing a light blue background */
+  width: 100vw;
+  background-color: #D6EFFF;
+}
+
+ul{
+
+  /* Choosing the orientation of the navbar. display:flex makes it horizontal */
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+body{
+  margin: 0;
+}
+
+button{
+  display: none;
+}
+
+a:hover{
+  background-color: #C6E9FF;
+}
