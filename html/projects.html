@@ -1,0 +1,44 @@
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="/css/project_tab.css"></link>
+
+
+<div class="main" id="projects_detail">
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      var root = document.location.hostname;
+      $("#nav-placeholder").load("/html/nav.html");
+    });
+
+    // Get the element with id="defaultOpen" and click on it. Need window on load.
+    window.onload = function() {
+      document.getElementById("defaultOpen").click();
+      document.getElementById("DE").innerHTML='<object type="text/html" data="/html/data_eng_proj.html" ></object>';
+      document.getElementById("DS").innerHTML='<object type="text/html" data="/html/data_sci_proj.html" ></object>';
+      document.getElementById("A").innerHTML='<object type="text/html" data="/html/analytics_proj.html" ></object>';
+
+      document.getElementById("header").innerHTML='<object type="text/html" data="/html/proj_header.html" ></object>';
+
+    }
+
+  </script>
+  <div>
+    <div id="nav-placeholder"></div>
+    <script type="application/javascript" src="/js/tab.js"></script>
+
+
+    <div class="header" id="header"></div>
+
+
+    <div class="tab">
+     <button class="tablinks" onclick="openCity(event, 'DE')" id="defaultOpen">Data Engineering</button>
+     <button class="tablinks" onclick="openCity(event, 'DS')">Data Science</button>
+     <button class="tablinks" onclick="openCity(event, 'A')">Analytics</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="DE" class="tabcontent"></div>
+    <div id="DS" class="tabcontent"></div>
+    <div id="A" class="tabcontent"></div>
+  </div>
+</div>
