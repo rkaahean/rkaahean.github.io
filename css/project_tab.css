@@ -25,7 +25,7 @@
  display: block;
  width: 25vw;
  font-size: 3vh;
- font-family: roboto;
+ font-family: roboto-thin;
 }
 
 /* Change background color of buttons on hover */
@@ -57,21 +57,23 @@
   to {opacity: 1;}
 }
 
+
 .header {
   text-align: center;
-  width: 100%
-
 }
 
-body {
+.project-header {
   font-family: roboto-thin;
-  font-size: 25px;
+  text-align: justify;
+  font-size: 14pt;
+  padding-left: 14vw;
+  padding-right: 14vw;
+
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+
 }
 
 .tablinks {
   font-weight: 900;
-}
-
-.main {
-  width: 100vw;
 }
