@@ -1,7 +1,12 @@
 @font-face { font-family: roboto; src: url('/fonts/Roboto-Regular.ttf'); }
 @font-face { font-family: roboto-thin; src: url('/fonts/Roboto-Thin.ttf'); }
 
+img {
+  width: 40vh;
+  height: 40vh;
 
+  border-radius:5px 0px 0px 5px ;
+}
 
 .card {
   /* Add shadows to create the "card" effect */
@@ -10,12 +15,15 @@
 
   border-radius: 5px;
 
-  padding: 10px;
-  margin-left: 200px;
-  margin-right: 200px;
+  height: 40vh;
 
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 26px;
   margin-bottom: 25px;
+
+  display: flex;
+  white-space: nowrap;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -24,6 +32,15 @@
 }
 
 /* Add some padding inside the card container */
-.container {
+.project-description {
   padding: 2px 16px;
+  width: 80vh;
+
+  border-right: 0.5px solid #000000;
+}
+
+.project-icons {
+  width: 1px;
+  height: 1px;
+
 }
