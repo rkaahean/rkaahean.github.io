@@ -2,14 +2,54 @@
 <meta http-equiv="Pragma" content="no-cache"/>
 <meta http-equiv="Expires" content="0"/>
 
-<link rel="stylesheet" href="/css/project_card.css"></link>
 
 <div class="card">
  <img src="/images/memsql_logo.jpg" alt="Avatar">
  <div class="project-description">
-   <h4><b>John Doe</b></h4>
+    <div class="project-title">
+      Timeseries DB revamp.
+    </div>
+
+    <div class="situation">
+      <p>A client needed to transition from MySQL database to a more faster solution due to the nature of the data which streamed at nearly 500,000 rows per second.</p>
+    </div>
+
+    <div class="task">
+      I came up with the alternative of MemSQL, a fast, scalable, and most importantly, compatible version of MySQL. The goal was to acheive a sub 1 second latency
+      on queries.
+    </div>
+
+    <div class="action">
+      With nearly a month's worth of data, spanning 55M rows, I ran benchmark scripts using dbbench to evaluate various configuration of MemSQL.
+    </div>
+
+    <div class="result">
+      I was able to setup, test and deploy a MemSQL cluster on a DigitalOcean droplet, which lead to sub 1s, (a 500% performance boost) on 40+ concurrent loads, for a mere
+      40$ / month.
+    </div>
  </div>
- <div class="project-icons">
-   <img src="/images/mysql.png" alt="MySQL">
+</div>
+
+
+<div class="card">
+ <img src="/images/memsql_logo.jpg" alt="Avatar">
+ <div class="project-description">
+    <div class="situation">
+      <p>A client needed to transition from MySQL database to a more faster solution due to the nature of the data which streamed at nearly 500,000 rows per second.</p>
+    </div>
+
+    <div class="task">
+      I came up with the alternative of MemSQL, a fast, scalable, and most importantly, compatible version of MySQL. The goal was to acheive a sub 1 second latency
+      on queries.
+    </div>
+
+    <div class="action">
+      With nearly a month's worth of data, spanning 55M rows, I ran benchmark scripts using dbbench to evaluate various configuration of MemSQL.
+    </div>
+
+    <div class="result">
+      I was able to setup, test and deploy a MemSQL cluster on a DigitalOcean droplet, which lead to sub 1s, (a 500% performance boost) based , even on 40+ concurrent loads, for a mere
+      40$ / month. This made the setup really scalable and future proof.
+    </div>
  </div>
 </div>

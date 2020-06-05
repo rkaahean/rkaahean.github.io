@@ -20,10 +20,12 @@ img {
   margin-left: 250px;
   margin-right: 250px;
   margin-top: 26px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 
   display: flex;
   white-space: nowrap;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -33,14 +35,48 @@ img {
 
 /* Add some padding inside the card container */
 .project-description {
-  padding: 2px 16px;
-  width: 80vh;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
-  border-right: 0.5px solid #000000;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  font-family: roboto;
+  word-wrap:break-word;
+  white-space: initial;
+
+  /* To get line */
+  /*border-right: 0.5px solid #000000; */
 }
 
-.project-icons {
-  width: 1px;
-  height: 1px;
+.project-title{
+  height: 20%;
+  font-family: roboto;
+  font-size: 20pt;
 
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+
+}
+
+.situation {
+  box-sizing: border-box;
+  height: 20%;
+  word-wrap:break-word;
+}
+
+.task {
+  box-sizing: border-box;
+  height: 20%;
+}
+
+.action {
+  box-sizing: border-box;
+  height: 20%;
+}
+
+.result {
+  box-sizing: border-box;
+  height: 20%;
 }
