@@ -63,9 +63,11 @@
 }
 
 .project-header {
-  font-family: roboto-thin;
   text-align: justify;
-  font-size: 14pt;
+
+  font-family: monospace;
+
+  font-size: 13pt;
   padding-left: 14vw;
   padding-right: 14vw;
 

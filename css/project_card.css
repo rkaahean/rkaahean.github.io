@@ -10,7 +10,7 @@ img {
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
   transition: .3s;
 
   border-radius: 5px;
@@ -38,20 +38,22 @@ img {
   padding-top: 5px;
   padding-bottom: 5px;
 
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  font-family: roboto;
+  font-family: monospace;
+  font-size: 11pt;
+
   word-wrap:break-word;
   white-space: initial;
 
-  /* To get line */
-  /*border-right: 0.5px solid #000000; */
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .project-title{
   height: 20%;
-  font-family: roboto;
+  font-family: roboto-thin;
   font-size: 20pt;
 
   padding-top: 1px;

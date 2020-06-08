@@ -7,7 +7,7 @@
  <img src="/images/memsql_logo.jpg" alt="Avatar">
  <div class="project-description">
     <div class="project-title">
-      Timeseries DB revamp.
+      Timeseries DB revamp
     </div>
 
     <div class="situation">
@@ -32,24 +32,28 @@
 
 
 <div class="card">
- <img src="/images/memsql_logo.jpg" alt="Avatar">
+ <img src="/images/snowflake.png" alt="Avatar">
  <div class="project-description">
+     <div class="project-title">
+       Fact & dimensional modelling
+     </div>
+
     <div class="situation">
-      <p>A client needed to transition from MySQL database to a more faster solution due to the nature of the data which streamed at nearly 500,000 rows per second.</p>
+        As part of a class project, I had to interact with a startup on revamping the way database which was accessed by Dashboards and other Analytical Tools
     </div>
 
     <div class="task">
-      I came up with the alternative of MemSQL, a fast, scalable, and most importantly, compatible version of MySQL. The goal was to acheive a sub 1 second latency
-      on queries.
+        The main aim was to come up with what are called Facts and dimensions, which is a conceptual procedure of sorts on structuring the database based on business
+        needs.
     </div>
 
     <div class="action">
-      With nearly a month's worth of data, spanning 55M rows, I ran benchmark scripts using dbbench to evaluate various configuration of MemSQL.
+        The facts revolved usually around a business function and the dimensions the components that make up said business function. Structuring this involved multiple
+        meetings with the client, and implementing in Snowflake, feeding in data from the old database.
     </div>
 
     <div class="result">
-      I was able to setup, test and deploy a MemSQL cluster on a DigitalOcean droplet, which lead to sub 1s, (a 500% performance boost) based , even on 40+ concurrent loads, for a mere
-      40$ / month. This made the setup really scalable and future proof.
+      The newly structured database was not only 17% faster, but also simplified access for Data & Business Analysts.
     </div>
  </div>
 </div>
