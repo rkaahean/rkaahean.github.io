@@ -21,7 +21,7 @@ a{
   color: black;
   font-family: roboto-thin;
 
-  padding: 2vw;
+  padding: 3vw;
 }
 
 nav{
@@ -29,7 +29,7 @@ nav{
   /*Set to 100% of viewport width. Choosing a light blue background */
   width: 100vw;
   background-color: #D6EFFF;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 ul{
