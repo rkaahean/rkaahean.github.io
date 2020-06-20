@@ -1,8 +1,10 @@
 .cover-image {
-
+  margin: 20px auto 20px;
+  display: block;
+  height: 35vw;
+  width: 64vw;
 }
 
 .img-box {
-  height: 100%;
-  width: 100%;
+
 }
