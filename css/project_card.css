@@ -2,8 +2,8 @@
 @font-face { font-family: roboto-thin; src: url('/fonts/Roboto-Thin.ttf'); }
 
 img {
-  width: 40vh;
-  height: 40vh;
+  width: 45vh;
+  height: 45vh;
 
   border-radius:5px 0px 0px 5px ;
 }
@@ -15,7 +15,7 @@ img {
 
   border-radius: 5px;
 
-  height: 40vh;
+  height: 45vh;
 
   margin-left: 250px;
   margin-right: 250px;
@@ -35,7 +35,7 @@ img {
 
 /* Add some padding inside the card container */
 .project-description {
-  padding-top: 5px;
+  padding-top: 2px;
   padding-bottom: 5px;
 
   padding-left: 20px;
