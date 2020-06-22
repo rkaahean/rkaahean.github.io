@@ -6,10 +6,11 @@
 .tab {
  overflow: hidden;
  border: 0px solid #ccc;
- background-color: #f1f1f1;
+ background-color: #1A1410;
  display: inline-block;
  margin-left: 12.5vw;
  margin-right: 5vw;
+  margin-bottom: 50px;
 
 }
 
@@ -25,17 +26,20 @@
  display: block;
  width: 25vw;
  font-size: 3vh;
+ color: white;
  font-family: roboto-thin;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
- background-color: #ddd;
+ background-color: #93F1FF;
+ color: black;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
- background-color: #ccc;
+ background-color: #93F1FF;
+ color:black;
 }
 
 /* Style the tab content */
