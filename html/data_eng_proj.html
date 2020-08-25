@@ -59,3 +59,30 @@
     </div>
  </div>
 </div>
+
+
+<div class="card">
+ <img src="/images/kafka.png" alt="Avatar">
+ <div class="project-description">
+     <div class="project-title">
+       Twitter Streaming with Kafka
+     </div>
+
+    <div class="situation">
+        In order to stream data in real time from Twitter, I wrote a Kafka Connect connector for obtaining tweets from scratch.
+    </div>
+
+    <div class="task">
+        The Kafka Connect topic, "twitter_tweet" was set up in a 3 partition, 3 replication factor config.
+    </div>
+
+    <div class="action">
+        The sink consisted of an ElastiSearch datbase deployed on bonsai.
+    </div>
+
+    <div class="action">
+        The final result was a Twitter Producer writing to a single Kafka Broker using a custom connector. Kafka then sent the data to ElastiSearch.
+        
+    </div>
+ </div>
+</div>
