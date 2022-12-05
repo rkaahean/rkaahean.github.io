@@ -30,11 +30,10 @@ export const Home = () => {
       >
         <List.Item>
           <Text>
-            Current working at{" "}
+            Developing fraud detection and prevention solutions at{" "}
             <Text span c="blue" inherit fw={500}>
-              Chippercash
+              Chippercash.
             </Text>
-            , working on Fraud detection & prevention with ML.
           </Text>
         </List.Item>
         <List.Item>
