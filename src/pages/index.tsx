@@ -7,7 +7,7 @@ const Home: NextPage = () => {
         <div className="text-left font-sans text-7xl font-bold text-blue-300">
           Welcome!
         </div>
-        <div className="mt-10">
+        <div className="my-10 px-4">
           <div className="-left text-left font-sans text-4xl font-light text-slate-200">
             My name is
             <div className="inline font-bold text-blue-300">
@@ -25,19 +25,19 @@ const Home: NextPage = () => {
           <ul className="mt-10 text-left text-2xl font-light text-slate-200">
             <li>
               Developing fraud detection and prevention solutions at
-              <div className="inline font-semibold text-teal-500">
+              <div className="inline font-semibold text-green-600	">
                 &nbsp;Chippercash.
               </div>
             </li>
             <li>
               Residing in the best city in the world,
-              <div className="inline font-semibold text-teal-500">
+              <div className="inline font-semibold text-green-600	">
                 &nbsp;Los Angeles.
               </div>
             </li>
             <li>
               Failing miserably at first person shooters, especially
-              <div className="inline font-semibold text-teal-500">
+              <div className="inline font-semibold text-green-600	">
                 &nbsp;Apex Legends.
               </div>
             </li>
