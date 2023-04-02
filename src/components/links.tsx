@@ -1,22 +1,21 @@
-import Image from "next/image"
-import { CURRENT_COMPANY_LOGO } from "../data/assets/logos"
 import classNames from "classnames"
+import Image from "next/image"
 
-export function Link() {
+export const CustomLink = ({url, text, logo}: {url:string;text:string;logo:string}) => {
     return (
         <div className="flex items-center underline underline-offset-4">
-            <div className="relative h-5 w-5 mr-1">
+            <div className="relative h-5 w-5 mx-1">
                 <Image
-                    src={CURRENT_COMPANY_LOGO}
+                    src={logo}
                     alt=""
                     fill
                 />
             </div>
             <a className={
                 classNames("inline text-slate-300 hover:text-sky-400")}
-                href="https://www.chippercash.com"
+                href={url}
             >
-                ChipperCash
+                {text}
             </a>
         </div>
     )
