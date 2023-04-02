@@ -14,5 +14,15 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'api.iconify.design',
+        port: '',
+        pathname: '/*',
+      },
+    ],
+  },
 };
 export default config;

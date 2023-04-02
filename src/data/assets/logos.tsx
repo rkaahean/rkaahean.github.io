@@ -1,0 +1,1 @@
+export const CURRENT_COMPANY_LOGO = "https://api.iconify.design/ph:terminal-fill.svg?color=%23888888"
