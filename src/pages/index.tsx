@@ -12,7 +12,7 @@ export default function About() {
     <div
       className={classNames(
         "from-stone-950 flex min-h-screen flex-col items-center justify-start bg-gradient-to-b to-stone-900 ",
-        "px-2 sm:px-8"
+        "px-8"
       )}
     >
       <Navbar />
@@ -20,7 +20,7 @@ export default function About() {
         <div className="text-4xl font-bold text-slate-100 sm:text-5xl">
           Ranjan Srinivas
         </div>
-        <div className="mt-5 text-base text-stone-300 sm:text-lg">
+        <div className="mt-5 text-justify text-lg text-stone-300">
           <div className="mt-5">
             Hello, my name is Ranjan Srinivas, and I&apos;m an aspiring Software
             Engineer at&nbsp;
