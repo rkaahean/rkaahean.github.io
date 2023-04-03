@@ -1,9 +1,11 @@
 import { CustomLink } from "../components/links";
+import { Navbar } from "../components/navbar";
 import { APEX_LEGENDS_LOGO, CURRENT_COMPANY_LOGO, MUFC_LOGO } from "../data/assets/logos";
 
 export default function About() {
   return (
     <div className="bg-stone-950 flex min-h-screen flex-col items-center justify-start">
+      <Navbar/>
       <div className="w-1/3">
         <div className="text-5xl font-bold text-slate-100">Ranjan Srinivas</div>
         <div className="mt-5 text-lg text-slate-300">
