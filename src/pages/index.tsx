@@ -1,51 +1,63 @@
-import { type NextPage } from 'next';
+import classNames from "classnames";
+import { CustomLink } from "../components/links";
+import { Navbar } from "../components/navbar";
+import {
+  APEX_LEGENDS_LOGO,
+  CURRENT_COMPANY_LOGO,
+  MUFC_LOGO,
+} from "../data/assets/logos";
 
-const Home: NextPage = () => {
-	return (
-		<>
-			<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
-				<div className="text-left font-sans text-7xl font-bold text-blue-300">
-					Welcome!
-				</div>
-				<div className="my-10 px-4">
-					<div className="-left text-left font-sans text-4xl font-light text-slate-200">
-						My name is
-						<div className="inline font-bold text-blue-300">
-							&nbsp;Ranjan Srinivas.
-						</div>
-					</div>
-					<div className="text-left text-2xl font-light text-slate-400">
-						I work as as
-						<div className="inline font-semibold text-teal-500">
-							&nbsp;Machine Learning Engineer
-						</div>
-						, attempting to detect and prevent fraudulent actors in the fintech
-						ecosystem.
-					</div>
-					<ul className="mt-10 text-left text-2xl font-light text-slate-200">
-						<li>
-							Developing fraud detection and prevention solutions at
-							<div className="inline font-semibold text-green-600	">
-								&nbsp;Chippercash.
-							</div>
-						</li>
-						<li>
-							Residing in the best city in the world,
-							<div className="inline font-semibold text-green-600	">
-								&nbsp;Los Angeles.
-							</div>
-						</li>
-						<li>
-							Failing miserably at first person shooters, especially
-							<div className="inline font-semibold text-green-600	">
-								&nbsp;Apex Legends.
-							</div>
-						</li>
-					</ul>
-				</div>
-			</main>
-		</>
-	);
-};
-
-export default Home;
+export default function About() {
+  return (
+    <div
+      className={classNames(
+        "from-stone-950 flex min-h-screen flex-col items-center justify-start bg-gradient-to-b to-stone-900 ",
+        "px-2 sm:px-8"
+      )}
+    >
+      <Navbar />
+      <div className="w-full sm:w-1/4">
+        <div className="text-4xl font-bold text-slate-100 sm:text-5xl">
+          Ranjan Srinivas
+        </div>
+        <div className="mt-5 text-base text-stone-300 sm:text-lg">
+          <div className="mt-5">
+            Hello, my name is Ranjan Srinivas, and I&apos;m an aspiring Software
+            Engineer at&nbsp;
+            <span className="inline-block align-middle">
+              <CustomLink
+                url="https://www.chippercash.com"
+                text="Chippercash"
+                logo={CURRENT_COMPANY_LOGO}
+              />
+            </span>
+            .
+          </div>
+          <div className="mt-5">
+            I currently focus on building end-to-end Machine Learning solutions
+            to combat fraudulent activity in the fintech space.
+          </div>
+          <div className="mt-5">
+            Outside of work, you can find me playing&nbsp;
+            <span className="inline-block align-middle">
+              <CustomLink
+                url="https://www.ea.com/games/apex-legends"
+                text="Apex Legends"
+                logo={APEX_LEGENDS_LOGO}
+              />
+            </span>
+            , watching
+            <span className="inline-block align-middle">
+              <CustomLink
+                url="https://www.manutd.com/"
+                text="Manchester United"
+                logo={MUFC_LOGO}
+              />
+            </span>
+            &nbsp; or relaxing at a local coffee shop.
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
