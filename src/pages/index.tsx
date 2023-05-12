@@ -16,7 +16,7 @@ export default function About() {
       )}
     >
       <Navbar />
-      <div className="w-full sm:w-1/4">
+      <div className="w-full sm:w-1/3">
         <div className="text-4xl font-bold text-slate-100 sm:text-5xl">
           Ranjan Srinivas
         </div>
