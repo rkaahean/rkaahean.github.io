@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="flex h-16 w-full flex-row text-base text-stone-300">
+    <div className="flex h-16 w-full flex-row bg-stone-950 text-base text-stone-300">
       <ul
         className={classNames(
           "flex h-full flex-row items-center space-x-4 font-semibold"
@@ -15,6 +15,9 @@ export const Navbar = () => {
         </li>
         <li className="hover:text-stone-100">
           <Link href="/">About</Link>
+        </li>
+        <li className="hover:text-stone-100">
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
       <ul className={classNames("ml-auto flex h-full items-center space-x-8")}>

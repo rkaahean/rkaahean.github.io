@@ -1,21 +1,20 @@
 import classNames from "classnames";
-import { CustomLink } from "../components/links";
-import { Navbar } from "../components/navbar";
+import { CustomLink } from "./components/links";
+import { Navbar } from "./components/navbar";
 import {
   APEX_LEGENDS_LOGO,
   CURRENT_COMPANY_LOGO,
   MUFC_LOGO,
-} from "../data/assets/logos";
+} from "./data/assets/logos";
 
 export default function About() {
   return (
     <div
       className={classNames(
-        "from-stone-950 flex min-h-screen flex-col items-center justify-start bg-gradient-to-b to-stone-900 ",
+        "flex min-h-screen flex-col items-center justify-start bg-gradient-to-b from-stone-950 to-stone-900 ",
         "px-8"
       )}
     >
-      <Navbar />
       <div className="w-full sm:w-1/3">
         <div className="text-4xl font-bold text-slate-100 sm:text-5xl">
           Ranjan Srinivas
