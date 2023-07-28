@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const config = {
   images: {
     dangerouslyAllowSVG: true,
@@ -14,7 +15,18 @@ const config = {
         port: "",
         pathname: "/*",
       },
+      {
+        protocol: "https",
+        hostname: "api.iconify.design",
+        port: "",
+        pathname: "/*",
+      },
     ],
   },
+  experimental: {
+    mdxRs: true,
+  },
 };
-export default config;
+
+const withMDX = require("@next/mdx")();
+module.exports = withMDX(config);

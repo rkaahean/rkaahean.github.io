@@ -1,69 +1,48 @@
-import classNames from "classnames";
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { GithubIcon, HomeIcon, InfoIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="flex h-16 w-full flex-row bg-stone-950 text-base text-stone-300">
-      <ul
-        className={classNames(
-          "flex h-full flex-row items-center space-x-4 font-semibold"
-        )}
-      >
-        <li className="hover:text-stone-100">
-          <Link href="/">Home</Link>
-        </li>
-        <li className="hover:text-stone-100">
-          <Link href="/">About</Link>
-        </li>
-        <li className="hover:text-stone-100">
-          <Link href="/blog">Blog</Link>
-        </li>
-      </ul>
-      <ul className={classNames("ml-auto flex h-full items-center space-x-8")}>
-        <li>
-          <Link href="https://www.twitter.com/@rkaahean" target="_blank">
-            <div className="relative h-6 w-6 filter-none hover:brightness-150">
-              <Image
-                src={
-                  "https://api.iconify.design/tabler:brand-twitter-filled.svg?color=%23888888"
-                }
-                alt=""
-                fill
-              />
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="https://www.linkedin.com/in/ranjansrinivas/"
-            target="_blank"
-          >
-            <div className="relative h-6 w-6 hover:brightness-150">
-              <Image
-                src={
-                  "https://api.iconify.design/radix-icons:linkedin-logo.svg?color=%23888888"
-                }
-                alt=""
-                fill
-              />
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href="https://www.github.com/rkaahean" target="_blank">
-            <div className="relative h-6 w-6 hover:brightness-150">
-              <Image
-                src={
-                  "https://api.iconify.design/radix-icons:github-logo.svg?color=%23888888"
-                }
-                alt=""
-                fill
-              />
-            </div>
-          </Link>
-        </li>
-      </ul>
+    <div className="flex h-16 items-center gap-5">
+      <Link href="/">
+        <Button>
+          <div className="flex flex-row items-end justify-end gap-2">
+            <HomeIcon size={24} />
+            <div>Home</div>
+          </div>
+        </Button>
+      </Link>
+
+      <Link href="/about">
+        <Button>
+          <div className="flex flex-row items-end justify-end gap-2">
+            <InfoIcon size={24} />
+            <div>About</div>
+          </div>
+        </Button>
+      </Link>
+
+      <Link href="/blog">
+        <Button>
+          <div className="flex flex-row items-end justify-end gap-2">
+            <InfoIcon size={24} />
+            <div>Blog</div>
+          </div>
+        </Button>
+      </Link>
+
+      <Link href="https://www.x.com/@rkaahean">
+        <Button>
+          <TwitterIcon size={24} />
+        </Button>
+      </Link>
+
+      <Link href="https://www.github.com/rkaahean">
+        <Button>
+          <GithubIcon size={24} />
+        </Button>
+      </Link>
     </div>
   );
 };

@@ -1,7 +1,9 @@
+import HelloWorld from "./content/intro.mdx";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="text-4xl text-white">
+      <HelloWorld />
     </div>
   );
 }
