@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { CustomLink } from "./components/links";
-import { Navbar } from "./components/Navbar";
 import {
   APEX_LEGENDS_LOGO,
   CURRENT_COMPANY_LOGO,
